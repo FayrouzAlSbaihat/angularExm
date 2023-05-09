@@ -1,0 +1,50 @@
+
+<div>
+
+<div>
+    <label>Name:</label>
+    <input type="text" >
+    <input type="button" value="Search">
+</div>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>code</th>
+                <th>Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let country of licountry">
+                <td>{{country.code}}</td>
+                <td>{{country.name}}</td>
+                <td>Action</td>
+            </tr>
+        </tbody>
+    
+    </table>
+</div>
+
+
+<div>
+    <span>New Country</span>
+    <label>code</label>
+    <input type="text" >
+
+    <label>Name</label>
+    <input type="text" >
+
+    <input type="submit" value="Save" (click)="AddNewCountry()">
+
+
+</div>
+
+
+
+
+
+</div>
+
